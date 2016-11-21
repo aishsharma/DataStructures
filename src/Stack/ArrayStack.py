@@ -4,15 +4,7 @@ Author: Aishwarya Sharma
 import logging
 from typing import Any
 
-
-class Underflow(Exception):
-	def __str__(self):
-		return "Stack is empty"
-
-
-class Overflow(Exception):
-	def __str__(self):
-		return "Stack is full"
+from src.Stack.StackExceptions import Overflow, Underflow
 
 
 class ArrayStack:
